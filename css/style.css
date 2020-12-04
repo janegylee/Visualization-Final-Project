@@ -1,0 +1,133 @@
+body {
+  text-align: center;
+  color: black;
+}
+
+.image {
+  border-radius: 25px;
+  margin-bottom: 5%;
+}
+
+.fp-controlArrow {
+  margin: 5%;
+}
+
+.vis-container {
+  /* margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
+  padding: 50px; */
+  /* background-color: #f7f7f7;
+  border: 1px solid steelblue; */
+  /* border-width: 2px;
+  border-radius: 4px; */
+  display: flex;
+  justify-content: center;
+}
+
+.side-charts {
+  margin: 0 0.5%;
+  /* border: 5px solid chartreuse; */
+}
+
+.section-container {
+  /* margin: 2% 20%; */
+  border: 5px solid grey;
+}
+
+h1,
+h3 {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+
+
+
+.smallfont {
+  font-size: 35px;
+}
+
+.text-block {
+  font-size: 20px;
+}
+
+#page-intro p {
+  width: 700px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+.header {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+#thanks {
+  font-size: 40px;
+  margin-top: 10%;
+  color: orange;
+  font-weight: bold;
+}
+
+
+
+/* Jane */
+.tooltip-line {
+  display: none;
+  position: absolute;
+  font-size: 13px;
+  padding: 4px;
+  background-color: black;
+  color: orange;
+  border-radius: 8px;
+}
+
+.tooltip-line1 {
+  display: none;
+  position: absolute;
+  font-size: 13px;
+  padding: 4px;
+  background-color: orange;
+  color: black;
+  border-radius: 8px;
+}
+/* End of Jane */
+
+/* Brishti */
+.tooltip-pie {
+  position: absolute;
+  display: none;
+  border-bottom: 1px dotted black;
+  font-size: 13px;
+  width: auto;
+  height: auto;
+  padding: 8px;
+  background-color: rgb(40, 91, 133);
+  color: white;
+  border-radius: 12px;
+  opacity: 0.7;
+}
+
+.tooltip-pie p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#platform button {
+  background-color: orange;
+  border: black;
+  color: black;
+}
+
+#platform button:hover {
+  background-color: black;
+  color: white;
+}

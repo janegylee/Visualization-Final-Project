@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <!-- Load Javascript files -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script>
+    <script defer src="https://unpkg.com/topojson@3"></script>
+
+
+    <!-- Your code -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bubble_density_style.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+
+    <script defer src="main.js" type="module"></script>
+    
+
+    <title>Final Project: Rise of Streaming Platform</title>
+
+</head>
+<body>
+    <div id="fullpage">
+        <section class='section'>
+            <h1>
+                Rise of Streaming Platforms 
+            </h1>
+            <img class='image' src="img/streaming_platforms.png" alt="streaming_platforms"/>
+        </br>
+            <a href="about.html" target="_blank" style =  "color:orange; font-size: 1.5em; font-weight:bold;">Project Info</a>
+            <h4>By Mooyeong Lee, Sung Joon Park, Brishti Saha, and Ga Young Lee</h4>
+        </section>
+
+        <section class="section" id="page-intro">
+            <div class="slide active">
+                <h1>Do you prefer watching movies at home?</h1>
+            </div>
+            <div class="slide">
+                <h1>Do you like binge watching?</h1>
+            </div>
+            <div class="slide">
+                <h1>
+                    Do you get lazy getting out of your </br> bed to go to a movie theatre?
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="smallfont">
+                    Then you are not alone! <br>
+                    There has been a rise in </br> streaming platform users </br> just like you.</br>  
+                </br> 
+                    Let’s dive into more details with some statistics:
+                </h1>
+            </div>
+        </section>
+
+        <section class='section'>
+            <h1 class='header'>Movie Tickets & Netflix Subscription Trend </h1>
+            <section class='vis-container'>
+                <div id='line-chart-container'></div>
+                <div id='line-chart-container1'></div>
+                <div class='tooltip-line'></div>
+                <div class='tooltip-line1'></div>
+            </section>
+            <p style = "font-size: 18px;">
+                People have been shifting from going to a theater or watching on TV's </br> to watching shows on streaming platforms: 
+                In the US, the number of </br> movie tickets sold has been generally decreasing while netflix </br> subscriptions have been constantly on the rise.
+            </p>
+        </section>
+
+        <section class='section'>
+            <h1 class='header'>Statistics by Each Country</h1>
+            <section class='vis-container'>
+                <div id='map-chart-container'>
+                    <!-- Map Chart goes here -->
+                </div>
+                <article class='side-charts'>
+                    <h3 id="Map-Country">Country</h3>
+                    <div id='IMDB-chart-container'>
+                        <!-- IMDB Visualization -->
+                    </div>
+                    <div id='Rotten-tomato-container'>
+                        <!-- Rotten tomato container -->
+                    </div>
+                    <div id='bar-chart-container'>
+                        <h4>Movie Count By Platform</h4>
+                        <!-- Bar Chart on the side -->
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class='section'>
+            <h1 class = 'header'>Movies on Netflix</h1>
+            <article class="vis-container">
+                <div id='bubble-chart-container'>
+                    <div class="bubble">
+                        <div id="tooltip2" class="hidden">
+                            <p><strong>Movie: </strong></p>
+                            <p id="title">t</p>
+                            <p><strong><span>Genre: </span></strong></p>
+                            <p id="genre">g</p>
+                        </div>
+                    </div>
+                    <button type="button" id="play-button" class="btn play_btn btn-primary">
+                                Next&nbsp;&nbsp;▶
+                    </button>
+                    <div id="slider" class="slider"></div>
+                </div>
+                <div class='side-charts'>
+                    <p id="comment-1"></p>
+                    <div class="density" >
+                        <div id="tooltip" class="hidden">
+                            <p><strong>Runtime</strong></p>
+                            <p><span id="runtime">0</span></p>
+                            <p><strong><span>Count</span></strong></p>
+                            <p><span id="count">0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class='section'>
+            <h1 class = 'header'>Genres by Content Rating</h1>
+            <section class='vis-container'>
+                <div id='pie-chart-container'>
+                    <label for="group-by">Group By</label>
+                    <select id="group-by">
+                        <option value="all">All Ages</option>
+                        <option value="7+">7+</option>
+                        <option value="13+">13+</option>
+                        <option value="16+">16+</option>
+                        <option value="18+">18+</option>v
+                    </select>
+                    <div id="platform">
+                        <button value="All" class=button-pie>All</button>
+                        <button value="Netflix" class=button-pie>Netflix</button>
+                        <button value="Hulu" class=button-pie>Hulu</button>
+                        <button value="Prime Video" class=button-pie>Prime Video</button>
+                        <button value="Disney+" class=button-pie>Disney+</button>
+                    </div>
+                </div>
+                <div class='tooltip-pie'></div>
+            </section>
+        </section>
+
+        <section class='section'>
+            <div class="container" id="page-outro">
+                <div class="text-block">
+                  <p>
+                      With the rising popularity and importance of various streaming platforms </br>including Netflix 
+                      and Disney+, Over the Top (OTT) market has been evidently </br> growing and the consumers are able to access 
+                      their favorite shows more </br> easily.
+                      
+                  </p>
+              </br>
+                  <p>
+                      These growths have so much to offer to the companies as well as the
+                      consumers </br> such as providing emotional relief. As people who received these values 
+                      ourselves, </br> we hope to provide meaningful information and trends regarding movies on multiple </br> 
+                      streaming platforms and hope that the OTT market continues to expand and provide </br> positive 
+                      utilities to its consumers.
+                  </p>
+                  <p id="thanks">
+                      Thank You!
+                  </p>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Load Fullpage.js -->
+    <script type="text/javascript"  src="js/library/fullpage.js"></script>
+    <script type="text/javascript"  >
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['white', 'orange', '#white'],
+            anchors: ['Header', 'Introduction', 'Line-Chart', 'Map-Chart', 'Bubble-Chart', 'Pie-Chart', 'Conclusion'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips:  ['Header', 'Introduction', 'Line Chart', 'Map Chart', 'Bubble Chart', 'Pie Chart', 'Conclusion'],
+        });
+    </script>
+</body>
+</html>

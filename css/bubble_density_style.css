@@ -1,0 +1,72 @@
+/* .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+} */
+/* 
+.box {
+    position: absolute;
+    left: 0%;
+    width: 110%;
+    height: 60%;
+    margin-left: 0px;
+    margin-top: 20%;
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-top: 35px;
+} */
+#comment-1 {
+  font-size: 18px;
+}
+#tooltip,
+#tooltip2 {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  padding: 10px;
+  background-color: #e0bcb0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  text-align: center;
+}
+
+#tooltip.hidden,
+#tooltip2.hidden {
+  display: none;
+}
+
+#tooltip p,
+#tooltip2 p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#play-button {
+  text-align: center;
+  font-size: 17px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 18px;
+  vertical-align: middle;
+  /* margin-left: 27%; */
+}
+
+.track {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: rgb(114, 53, 53);
+  stroke-opacity: 0.3;
+  stroke-width: 10px;
+}
